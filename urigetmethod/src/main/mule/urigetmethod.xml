@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="urigetmethodFlow" doc:id="821bf58f-5666-4429-99dd-2dac72de41aa" >
 		<http:listener doc:name="Listener" doc:id="eac472e1-0511-4260-a968-8922f24069ce" config-ref="HTTP_Listener_config" path="/check/{mobilemodel}"/>
 		<logger level="INFO" doc:name="Logger" doc:id="5ec1a9f6-f15e-4e18-b46b-512ff5c60d6b" message="#[attributes.uriParams.'mobilemodel']"/>
+		<logger level="INFO" doc:name="Logger" doc:id="f48085a3-79e7-48d9-bff8-9ebefafa1b85" />
 	</flow>
 </mule>
